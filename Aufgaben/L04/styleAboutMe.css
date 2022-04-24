@@ -71,7 +71,7 @@ li a:hover:not(.active) {
 
 .background{
   position: absolute;
-  background: url(files/fotos/pokemonMuseum.JPG);
+  background: url(dateien/fotos/pokemonMuseum.JPG);
   background-position: center;
   height: 400px;
   width: 100%;
