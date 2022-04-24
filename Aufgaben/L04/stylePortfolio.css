@@ -1,0 +1,100 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    color: white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+.logo{
+  position: absolute;
+  float: left;
+}
+
+.ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+  }
+
+ li {
+   float: right;
+ }
+ li a {
+   display: block;
+   color: darkgray;
+   text-shadow: 2px 2px 10px black;
+   font-size: 24px;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ } 
+ li a:hover:not(.active) {
+   text-decoration: underline;
+   border-bottom: 10px;
+   color: white;
+   text-shadow: 2px 2px 10px black;
+ }
+.active a{
+   color:white;
+   text-decoration: underline;
+   text-shadow: 2px 2px 10px black;
+}
+
+
+.containerHeader{
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  padding-top: 100px;
+}
+.background{
+  position: absolute;
+  background: url(files/fotos/pokemonMuseum.JPG);
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+.containerMain{
+  margin: auto;
+  width: 800px;
+ }
+
+
+
+
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.box{
+  position: absolute;
+  background: #eaeaea;
+  background-position: center;
+  width: 100%;
+  left: 0;
+}
+.containerFooter{
+  width: 800px;
+  margin: Auto;
+  background-color: #eaeaea;
+}
+.footerbox{
+  float: left;
+  width: 33,33%;
+  margin-right: 2%;
+  padding: 60px;
+  background: #eaeaea;
+}
+.footerbox:last-child{
+  margin-right: 0;
+}
