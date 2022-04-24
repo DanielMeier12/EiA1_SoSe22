@@ -47,6 +47,28 @@ li a:hover:not(.active) {
   margin: auto;
   padding-top: 100px;
 }
+
+.steckbrief {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.steckbrief td, #customers th {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+.steckbrief tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.steckbrief th {
+  padding: 16px;
+  text-align: left;
+  background-color: darkgreen;
+  color: white;
+  font-size: 24px;
+}
+
 .background{
   position: absolute;
   background: url(files/fotos/pokemonMuseum.JPG);
@@ -57,18 +79,11 @@ li a:hover:not(.active) {
   left: 0;
   z-index: -1;
 }
-
-
-
 .containerMain{
   margin: auto;
   width: 800px;
+  margin-bottom: 40px;
  }
-
-
-
-
-
 footer{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -76,7 +91,7 @@ footer{
   margin: 0;
   display: flex;
 }
-.box{
+.footerBackground{
   position: absolute;
   background: #eaeaea;
   background-position: center;
@@ -98,6 +113,3 @@ footer{
 .footerbox:last-child{
   margin-right: 0;
 }
-
-
-
