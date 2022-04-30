@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
 h1{
   font-family: 'Bebas Neue', cursive;
   font-size: 64px;
@@ -10,7 +9,13 @@ h2{
   font-family: 'Bebas Neue', cursive;
   font-size: 64px;
 }
-
+.ueberschrift{
+  position:relative;
+  font-size: 80px;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
 .logo{
   position: absolute;
   float: left;
@@ -92,9 +97,8 @@ h2{
   font-family: 'Bebas Neue', cursive;
   color: white;
 }
-
 .containerMain{
-  margin: auto;
+  margin:auto;
   width: 800px;
   margin-bottom: 40px;
  }
