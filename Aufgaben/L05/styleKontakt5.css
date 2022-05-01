@@ -93,7 +93,7 @@ li a:hover:not(.active) {
   display: block;
   background-color: #202020;
   position: fixed;
-  padding: 10px 200px;
+  padding: 5px 200px;
   top: 40px;
   right: -150px;
   transform: rotate(40deg);
