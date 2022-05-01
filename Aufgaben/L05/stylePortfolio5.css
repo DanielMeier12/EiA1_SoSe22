@@ -14,7 +14,7 @@ h2{
   font-size: 80px;
   margin: 0;
   padding-top: 100px;
-  padding-bottom: 0px;
+  margin-bottom: -22px;
 }
 .logo{
   position: absolute;
@@ -96,9 +96,6 @@ h2{
   transform: rotate(40deg);
   font-family: 'Bebas Neue', cursive;
   color: white;
-}
-#internship{
-  font-size: 32px;
 }
 .containerMain{
   margin:auto;

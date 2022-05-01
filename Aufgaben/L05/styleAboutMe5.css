@@ -13,7 +13,7 @@ h2{
   font-size: 80px;
   margin: 0;
   padding-top: 100px;
-  padding-bottom: 0px;
+  margin-bottom: -22px;
 }
 .logo{
   position: absolute;
