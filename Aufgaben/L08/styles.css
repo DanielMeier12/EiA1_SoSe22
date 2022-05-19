@@ -1,0 +1,25 @@
+body {
+    display: flexbox;
+    align-items: center;
+    background-color: blanchedalmond;
+
+}
+
+#keyboard {
+    background-color: white;
+    display: flex;
+    width: 700px;
+    width: 450px;
+
+}
+
+.weiss {
+    
+    background-color: #fff;
+}
+
+
+.schwarz {
+    color: white;
+    background-color: #000;
+}
