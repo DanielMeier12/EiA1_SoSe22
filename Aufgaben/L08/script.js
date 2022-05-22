@@ -20,7 +20,7 @@ sound['05'] = new Audio('./assets/g.mp3');
 sound['06'] = new Audio('./assets/a.mp3');
 sound['07'] = new Audio('./assets/b.mp3');
 window.addEventListener("load", function () {
-    document.getElementById("play").addEventListener("click", function () { playSample(sound['']); });
+    document.getElementById("play").addEventListener("click", function () { playSample(sound['']); }); //große Baustelel bei der Wiedergabe vom Playbutton
     document.querySelector("#c").addEventListener("click", function () { playSound(sound['01']); });
     document.querySelector("#d").addEventListener("click", function () { playSound(sound['02']); });
     document.querySelector("#e").addEventListener("click", function () { playSound(sound['03']); });

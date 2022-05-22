@@ -23,7 +23,7 @@ sound['07']=new Audio('./assets/b.mp3');
 
 window.addEventListener("load", function() {
 
-    document.getElementById("play").addEventListener("click",function() {playSample (sound[''])});
+    document.getElementById("play").addEventListener("click",function() {playSample (sound[''])});//große Baustelel bei der Wiedergabe vom Playbutton
 
     document.querySelector("#c").addEventListener("click",function() {playSound (sound['01'])});
     document.querySelector("#d").addEventListener("click",function() {playSound (sound['02'])});
@@ -41,7 +41,7 @@ window.addEventListener("load", function() {
 
 function playSound(sound:HTMLAudioElement){
     sound.play();}
-function playSample(melodie:HTMLAudioElement){
+function playSample(melodie:HTMLAudioElement){//Probleme beim Intervall
     setInterval(playSample,100);
     melodie.play();}
 });
