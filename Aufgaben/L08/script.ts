@@ -12,11 +12,18 @@ sound['10']=new Audio('./assets/gf.mp3');
 sound['11']=new Audio('./assets/af.mp3');
 sound['12']=new Audio('./assets/bf.mp3');
 
-var soundPlay: HTMLAudioElement[]=[sound['01'],sound['02'],sound['03'],sound['04'],sound['05'],sound['06'],sound['07'],sound['06'],sound['05'],sound['04'],sound['03'],sound['02'],sound['01']]
+var melodie: HTMLAudioElement[]=[];
+sound['01']=new Audio("./assets/c.mp3");
+sound['02']=new Audio('./assets/d.mp3');
+sound['03']=new Audio('./assets/e.mp3');
+sound['04']=new Audio('./assets/f.mp3');
+sound['05']=new Audio('./assets/g.mp3');
+sound['06']=new Audio('./assets/a.mp3');
+sound['07']=new Audio('./assets/b.mp3');
 
 window.addEventListener("load", function() {
 
-    document.querySelector("#play").addEventListener("click",function(){playSample});;
+    document.getElementById("play").addEventListener("click",function() {playSample (sound[''])});
 
     document.querySelector("#c").addEventListener("click",function() {playSound (sound['01'])});
     document.querySelector("#d").addEventListener("click",function() {playSound (sound['02'])});
@@ -33,9 +40,8 @@ window.addEventListener("load", function() {
 
 
 function playSound(sound:HTMLAudioElement){
-    sound.play();
-}
-function playSample(soundPlay:HTMLAudioElement){
-    soundPlay.play();
-}
+    sound.play();}
+function playSample(melodie:HTMLAudioElement){
+    setInterval(playSample,100);
+    melodie.play();}
 });
