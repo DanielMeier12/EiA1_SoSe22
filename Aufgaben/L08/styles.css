@@ -1,25 +1,39 @@
 body {
-    display: flexbox;
+    background-color: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
-
+    overflow: hidden;
 }
 
 #keyboard {
-    background-color: white;
+    position: relative;
+    background-color: #ffffff;
     display: flex;
-    width: 700px;
-    width: 450px;
-
+    width: 1000px;
+    border: solid #000;
+    border-radius: 15px;
 }
 
-.weiss {
-    
-    background-color: #fff;
+.weiss { 
+    background-color: #ffffff;
+    height: 450px;
+    width: 100px;
+    margin: 1px 1px 1px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#000;
 }
-
-
 .schwarz {
-    color: white;
+    color: #ffffff;
     background-color: #000;
+    height: 450px;
+    width: 80px;
+    margin: 1px 1px 1px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#000;
 }
