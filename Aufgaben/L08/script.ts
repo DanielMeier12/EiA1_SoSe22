@@ -17,7 +17,6 @@ function playSample(sound:HTMLAudioElement){
 }
 window.addEventListener("load", function(){
     document.querySelector("#play").addEventListener('click',playSample);
-    })
-
+    });
 setInterval(function playSample() { 
  }, 500);
