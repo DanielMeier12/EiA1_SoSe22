@@ -1,12 +1,15 @@
 var sound = [("./assets/c.mp3"), ("./assets/d.mp3"), ("./assets/e.mp3"), ("./assets/f.mp3"), ("./assets/g.mp3"), ("./assets/a.mp3"), ("./assets/b.mp3"), ("./assets/df.mp3"), ("./assets/ef.mp3"), ("./assets/gf.mp3"), ("./assets/af.mp3"), ("./assets/bf.mp3")];
 var melodie = [sound[1], sound[2], sound[3], sound[4], sound[5], sound[4], sound[3], sound[2]];
 var counter = 0;
+var intervall;
+//zentrale funktion
 function playSample(ausgabe) {
     var sound = new Audio(ausgabe);
     if (document.getElementById("play").classList.contains("fa-play")) {
         sound.play();
     }
     else {
+        clearInterval();
         sound.pause();
     }
 }

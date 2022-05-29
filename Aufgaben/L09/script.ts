@@ -1,16 +1,17 @@
 var sound: string[] = [("./assets/c.mp3"), ("./assets/d.mp3"), ("./assets/e.mp3"), ("./assets/f.mp3"), ("./assets/g.mp3"), ("./assets/a.mp3"), ("./assets/b.mp3"), ("./assets/df.mp3"), ("./assets/ef.mp3"), ("./assets/gf.mp3"), ("./assets/af.mp3"), ("./assets/bf.mp3")];
 var melodie: string[] = [sound[1], sound[2], sound[3], sound[4], sound[5], sound[4], sound[3], sound[2]];
 var counter: number = 0;
-
+var intervall: number;
+//zentrale funktion
 function playSample(ausgabe: string): void {
     var sound: HTMLAudioElement = new Audio(ausgabe);
     if (document.getElementById("play").classList.contains("fa-play")) {
         sound.play();
     }
     else {
+        clearInterval();
         sound.pause();
     }
-
 }
 //loop
 function playMelodie(): void {
@@ -28,7 +29,6 @@ function playRemix(): void {
         var value: number = Math.random() * 10;
         playSample(sound[Math.floor(value)]);
     },          500);
-
 }
 //veränderung des buttons
 function startStop(): void {
@@ -40,9 +40,7 @@ function startStop(): void {
         document.getElementById("play").classList.remove("fa-stop");
         document.getElementById("play").classList.add("fa-play");
     }
-
 }
-
 //wiedergabe der toene/melodie/remix
 window.addEventListener("load", function keyboard(): void {
     document.getElementById("c").addEventListener("click", function(): void {playSample(sound[1]); });
