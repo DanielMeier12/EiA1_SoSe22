@@ -18,20 +18,23 @@ function playMelodie(): void {
 }
 //remix  
 function playRemix(): void {
-    
+    setInterval(function(): void {
+        var value: number = Math.random() * 10;
+        playSample(sound[Math.floor(value)]);
+    },          500);
+
 }
 //veränderung des buttons
 function startStop(): void {
-    if (document.getElementById("change").classList.contains("fa-play")) {
-        document.getElementById("change").classList.remove("fa-play");
-        document.getElementById("change").classList.add("fa-stop");
+    if (document.getElementById("play").classList.contains("fa-play")) {
+        document.getElementById("play").classList.remove("fa-play");
+        document.getElementById("play").classList.add("fa-stop");
     }
     else {
-        document.getElementById("change").classList.remove("fa-stop");
-        document.getElementById("change").classList.add("fa-play");
+        document.getElementById("play").classList.remove("fa-stop");
+        document.getElementById("play").classList.add("fa-play");
     }
 }
-
 //wiedergabe der toene/melodie/remix
 window.addEventListener("load", function keyboard(): void {
     document.getElementById("c").addEventListener("click", function(): void {playSample(sound[1]); });
@@ -46,7 +49,7 @@ window.addEventListener("load", function keyboard(): void {
     document.getElementById("gf").addEventListener("click", function(): void {playSample(sound[10]); });
     document.getElementById("af").addEventListener("click", function(): void {playSample(sound[11]); });
     document.getElementById("bf").addEventListener("click", function(): void {playSample(sound[12]); });
+    document.getElementById("play").addEventListener("click", function(): void {startStop(); });
     document.getElementById("play").addEventListener("click", function(): void {playMelodie(); });
-    document.querySelector("remix").addEventListener("click", function(): void {playRemix(); });
+    document.querySelector("#remix").addEventListener("click", function(): void {playRemix(); });
 });
-

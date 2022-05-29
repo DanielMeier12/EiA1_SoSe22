@@ -17,16 +17,20 @@ function playMelodie() {
 }
 //remix  
 function playRemix() {
+    setInterval(function () {
+        var value = Math.random() * 10;
+        playSample(sound[Math.floor(value)]);
+    }, 500);
 }
 //veränderung des buttons
 function startStop() {
-    if (document.getElementById("change").classList.contains("fa-play")) {
-        document.getElementById("change").classList.remove("fa-play");
-        document.getElementById("change").classList.add("fa-stop");
+    if (document.getElementById("play").classList.contains("fa-play")) {
+        document.getElementById("play").classList.remove("fa-play");
+        document.getElementById("play").classList.add("fa-stop");
     }
     else {
-        document.getElementById("change").classList.remove("fa-stop");
-        document.getElementById("change").classList.add("fa-play");
+        document.getElementById("play").classList.remove("fa-stop");
+        document.getElementById("play").classList.add("fa-play");
     }
 }
 //wiedergabe der toene/melodie/remix
@@ -43,7 +47,8 @@ window.addEventListener("load", function keyboard() {
     document.getElementById("gf").addEventListener("click", function () { playSample(sound[10]); });
     document.getElementById("af").addEventListener("click", function () { playSample(sound[11]); });
     document.getElementById("bf").addEventListener("click", function () { playSample(sound[12]); });
+    document.getElementById("play").addEventListener("click", function () { startStop(); });
     document.getElementById("play").addEventListener("click", function () { playMelodie(); });
-    document.querySelector("remix").addEventListener("click", function () { playRemix(); });
+    document.querySelector("#remix").addEventListener("click", function () { playRemix(); });
 });
 //# sourceMappingURL=script.js.map
