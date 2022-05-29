@@ -3,7 +3,12 @@ var melodie = [sound[1], sound[2], sound[3], sound[4], sound[5], sound[4], sound
 var counter = 0;
 function playSample(ausgabe) {
     var sound = new Audio(ausgabe);
-    sound.play();
+    if (document.getElementById("play").classList.contains("fa-play")) {
+        sound.play();
+    }
+    else {
+        sound.pause();
+    }
 }
 //loop
 function playMelodie() {

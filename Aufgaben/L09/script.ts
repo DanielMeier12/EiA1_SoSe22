@@ -4,7 +4,13 @@ var counter: number = 0;
 
 function playSample(ausgabe: string): void {
     var sound: HTMLAudioElement = new Audio(ausgabe);
-    sound.play();
+    if (document.getElementById("play").classList.contains("fa-play")) {
+        sound.play();
+    }
+    else {
+        sound.pause();
+    }
+
 }
 //loop
 function playMelodie(): void {
@@ -34,7 +40,9 @@ function startStop(): void {
         document.getElementById("play").classList.remove("fa-stop");
         document.getElementById("play").classList.add("fa-play");
     }
+
 }
+
 //wiedergabe der toene/melodie/remix
 window.addEventListener("load", function keyboard(): void {
     document.getElementById("c").addEventListener("click", function(): void {playSample(sound[1]); });
