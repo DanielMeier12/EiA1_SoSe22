@@ -15,18 +15,18 @@ function playMelodie() {
         }
     }, 500);
 }
-//remix
+//remix  
 function playRemix() {
 }
 //veränderung des buttons
 function startStop() {
-    if (document.getElementById("play").classList.contains("fa-play")) {
-        document.getElementById("play").classList.remove("fa-play");
-        document.getElementById("play").classList.add("fa-stop");
+    if (document.getElementById("change").classList.contains("fa-play")) {
+        document.getElementById("change").classList.remove("fa-play");
+        document.getElementById("change").classList.add("fa-stop");
     }
     else {
-        document.getElementById("play").classList.remove("fa-stop");
-        document.getElementById("play").classList.add("fa-play");
+        document.getElementById("change").classList.remove("fa-stop");
+        document.getElementById("change").classList.add("fa-play");
     }
 }
 //wiedergabe der toene/melodie/remix
