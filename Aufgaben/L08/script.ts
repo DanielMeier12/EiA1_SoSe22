@@ -2,12 +2,12 @@ var sound: string[]=[("./assets/c.mp3"),("./assets/d.mp3"),("./assets/e.mp3"),("
 var melodie: string[]=[sound[1],sound[2],sound[3],sound[4],sound[5],sound[4],sound[3],sound[2]]
 var counter: number= 0;
 
-function playSample(ausgabe: string): void{
+function playSample(ausgabe: string): void {
     var sound: HTMLAudioElement = new Audio(ausgabe);
     sound.play();
 }
-function playMelodie(): void{
-    setInterval(function(): void{
+function playMelodie(): void {
+    setInterval(function(): void {
         playSample(melodie[counter]);
         counter ++;
         if (counter === 8) {
@@ -15,7 +15,7 @@ function playMelodie(): void{
         }
     }, 500);
 }
-window.addEventListener('load',function keyboard(): void {
+window.addEventListener('load', function keyboard(): void {
     document.getElementById("c").addEventListener("click",function(): void{playSample(sound[1]);});
     document.getElementById("d").addEventListener("click",function(): void{playSample(sound[2]);});
     document.getElementById("e").addEventListener("click",function(): void{playSample(sound[3]);});
