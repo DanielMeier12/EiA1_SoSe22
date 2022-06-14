@@ -1,22 +1,30 @@
-let input: HTMLInputElement = document.querySelector(".tasksEingabe");
+window.addEventListener("load", function (): void {
 
-input.addEventListener("keydown", function (event: KeyboardEvent): void {
+let input: HTMLInputElement = document.querySelector("#tasksEingabe");
+let div: HTMLDivElement = document.querySelector("taskbar");
+let task: string = input.value;
+
+input.addEventListener("keypress", function (event: KeyboardEvent): void {
     if (event.key == "enter") {
          addTask();
-         input.value = ""; // Problem beim ausführen vom Befehl!!!
+         input.value = ""; 
     }
-});    
+});
+
 function addTask(): void {
-    let div: HTMLDivElement = document.createElement("div");
-    div.className = "taskbar";
+    let item: HTMLDivElement = document.createElement("div");
+    item.className = "taskbar";
     let label: HTMLLabelElement = document.createElement("label");
-    label.innerHTML = input.value;
-    div.append("taskbar");
-    label.append(input.value);
-
-}
+    label.className = "taskbar";
+    let checkbox: HTMLInputElement = document.createElement("input");
+    checkbox.type = "checkbox";
+    label.append(checkbox, task);
+    item.append(label);
+    div.append(item);
+} 
 function removeTask(): void {
-    // Problem!
+    div.remove();
+    
 }
-
+});
 

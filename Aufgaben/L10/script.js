@@ -1,19 +1,23 @@
-let input = document.querySelector(".tasksEingabe");
-input.addEventListener("keydown", function (event) {
-    if (event.key == "enter") {
-        addTask();
-        input.value = ""; // Problem beim ausführen vom Befehl!!!
+window.addEventListener("load", function () {
+    let input = document.querySelector("#tasksEingabe");
+    let div = document.querySelector("taskbar");
+    let task = input.value;
+    input.addEventListener("keypress", function (event) {
+        if (event.key == "enter") {
+            addTask();
+            input.value = "";
+        }
+    });
+    function addTask() {
+        let item = document.createElement("div");
+        item.className = "taskbar";
+        let label = document.createElement("label");
+        label.className = "taskbar";
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        label.append(checkbox, task);
+        item.append(label);
+        div.append(item);
     }
 });
-function addTask() {
-    let div = document.createElement("div");
-    div.className = "taskbar";
-    let label = document.createElement("label");
-    label.innerHTML = input.value;
-    div.append("taskbar");
-    label.append(input.value);
-}
-function removeTask() {
-    // Problem!
-}
 //# sourceMappingURL=script.js.map
