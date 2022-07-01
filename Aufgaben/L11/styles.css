@@ -1,4 +1,5 @@
 body{
+    font-family: Arial, Helvetica, sans-serif   ;
     background: #a4eedd;
     display: flex;
     flex-direction: column;
@@ -7,36 +8,55 @@ body{
     overflow: hidden;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    width: 337px;
-    height: 667px;
+    position: fixed;
+    width: 375px;
 }
 select{
-    background: #ffffff;
-    border: 2px #09C59A solid;
+    background: #01523B;
+    border: 2px #01523B solid;
+    color: #ffffff;
     width: 100px;
     height: 30px;
     transition-duration: 0.4s;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #09C59A;
+}
+main{
+    position: fixed;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    top: 207px;
+}
+#logo{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
 }
 #start{
     background: #ffffff;
     border: 2px #09C59A solid;
     width: 300px;
     height: 50px;
-    margin: 100px;
     transition-duration: 0.4s;
+    font-size: 20px;
 }
 #start:hover{
     background: #09C59A ;
     color: #ffffff;
 } 
-#points{
-    text-align: right;
-    margin: 10px;
-}
 .task{
-    font-size: 20px;
-    color: #000000;
-    margin: 10px;
+    font-size: 30px;
+}
+#solution{
+    font-size: 25px;
+    font-style: italic;
 }
 #easy{
     background: #ffffff;
@@ -45,6 +65,7 @@ select{
     height: 50px;
     margin: 10px;
     transition-duration: 0.4s;
+    font-size: 20px;
 }
 #easy:hover{
     background: #3BE848 ;
@@ -57,6 +78,7 @@ select{
     height: 50px;
     margin: 10px;
     transition-duration: 0.4s;
+    font-size: 20px;
 }
 #medium:hover{
     background: #D6E526 ;
@@ -69,6 +91,7 @@ select{
     height: 50px;
     margin: 10px;
     transition-duration: 0.4s;
+    font-size: 20px;
 }
 #hard:hover{
     background: #E52626 ;
@@ -86,15 +109,45 @@ select{
     margin: 4px 2px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 20px;
 }
 .wordButton:hover{
     background-color: #09C59A;
     color: #ffffff;
 }
+.wordButton:active{
+    background-color: #09C59A;
+    color: #ffffff;  
+}
+#wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
 
+}
+progress {
+    border-radius: 7px; 
+    width: 300px;
+    height: 22px;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #01523B;
+    border-radius: 7px;
+  }
 .footer{
-    position: ;
-    text-align: left;
-    font-size: 10px;
-    margin: 150px 0px 10px;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #09C59A;
+    text-align: center;
+    width: 100%;
 }
