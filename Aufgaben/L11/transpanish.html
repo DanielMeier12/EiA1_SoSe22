@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanguageLearner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+<header class="header">
+    <a href="transpanish.html"><h1>LanguageLearner</h1></a>
+    <select name="language" id="country">
+        <option value="spanish">spanish</option>
+        <option value="ukrainian">ukrainian</option>
+    </select>
+    <p id="progressText"></p>
+    <progress id="progressbar" value="0" max="100" hidden></progress>
+    <p id="points"></p>
+</header>
+<main>
+    <div id="exercise">
+        <p class="task"></p>
+        <p id="solution"></p>
+        <div id="buttons"></div>
+    </div>
+    <div id="wrapper">
+        <button id="start">START</button>
+        <a id="back" href="transpanish.html" hidden>Zurück zur Startseite</a>
+    </div>
+</main>
+<footer class="footer">
+
+        <p>Daniel Meier</p>
+        <p>Matrikelnummer: 271129</p>
+        <p>Copyright © Daniel Meier</p>
+        <p>All rights reserved</p>
+
+</footer>
+</body>
+</html>

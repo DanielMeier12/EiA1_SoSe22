@@ -1,0 +1,100 @@
+body{
+    background: #a4eedd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 337px;
+    height: 667px;
+}
+select{
+    background: #ffffff;
+    border: 2px #09C59A solid;
+    width: 100px;
+    height: 30px;
+    transition-duration: 0.4s;
+}
+#start{
+    background: #ffffff;
+    border: 2px #09C59A solid;
+    width: 300px;
+    height: 50px;
+    margin: 100px;
+    transition-duration: 0.4s;
+}
+#start:hover{
+    background: #09C59A ;
+    color: #ffffff;
+} 
+#points{
+    text-align: right;
+    margin: 10px;
+}
+.task{
+    font-size: 20px;
+    color: #000000;
+    margin: 10px;
+}
+#easy{
+    background: #ffffff;
+    border: 2px #3BE848 solid;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    transition-duration: 0.4s;
+}
+#easy:hover{
+    background: #3BE848 ;
+    color: #ffffff;
+}
+#medium{
+    background: #ffffff;
+    border: 2px #D6E526 solid;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    transition-duration: 0.4s;
+}
+#medium:hover{
+    background: #D6E526 ;
+    color: #ffffff;
+} 
+#hard{
+    background: #ffffff;
+    border: 2px #E52626 solid;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    transition-duration: 0.4s;
+}
+#hard:hover{
+    background: #E52626 ;
+    color: #ffffff;
+}
+.wordButton{
+    background-color: #ffffff;
+    border: 2px #09C59A;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.wordButton:hover{
+    background-color: #09C59A;
+    color: #ffffff;
+}
+
+.footer{
+    position: ;
+    text-align: left;
+    font-size: 10px;
+    margin: 150px 0px 10px;
+}
